@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=3cm}
+\geometry{right=1.5cm}
+\geometry{top=2cm}
+\geometry{bottom=2cm}
+\title{Лабораторная работа №702. Получение и исследование поляризованного света.}
+\date{}
+\pagestyle{empty}
+\begin{document}
+	\maketitle
+	\thispagestyle{empty}
+	\section{Введение}
+
+\begin{equation}
+    equation
+    \label{key}
+\end{equation}
+
+\begin{equation}
+    equation
+\label{key}
+\end{equation}
+
+
+\subsection{Цель работы и решаемые задачи:}
+Цель работы: изучить явление поляризации света.
+
+Решаемые задачи:
+\begin{itemize}	
+	\item получить линейно поляризованный свет;
+	\item пронаблюдать изменения интенсивности света в зависимости от угла между осями поляризатора и анализатора;
+	\item проверить справедливость закона Малюса;
+	\item пронаблюдать прохождение плоскополяризованного света через кристаллическую пластинку, вырезанную из одноосного кристалла параллельно его оптической оси;
+	\item определить вид поляризации света в зависимости от толщины пластинки и угла между направлением колебаний электрического вектора в поляризованном свете, падающем на пластинку и осью пластинки.
+\end{itemize}
+
+\subsection{Экспериментальная установка}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 8cm]{yst.png}
+	\caption{Экспериментальная установка}	
+	\label{im:yst}	
+\end{figure}
+
+   
+\section{Экспериментальные данные и их обсуждение}
+\subsection{Упражнение 1. Проверка закона Малюса}
+Согласно закону Малюса, интенсивность света, прошедшего через поляризатор и анализатор, будет
+\begin{equation}
+	I = I_0\cos^2(\phi),
+	\label{eq:malus}
+\end{equation}
+где $\phi$ - угол между осями поляризатора и анализатора.
+В работе отчитывался угол $\alpha$ между направлением анализатора и условным нулевым направлением (см. рисунок). При подстановке значения угла $\phi = 180^\circ - \alpha$ формула \ref{eq:malus} не изменится:
+\begin{equation}
+	I = I_0\cos^2(\alpha).
+	\label{eq:malus2}
+\end{equation}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 6cm]{702ex1com.png}
+	\caption{Измеряемый угол и угол между направлениями поляризатора и анализатора}	
+	\label{im:ex1com}	
+\end{figure}
+Результаты измерений представлены в таблице \ref{tab:data1}. 
+\begin{table}[h]
+	\caption{Экспериментильные данные для упражнения 1}
+	\centering
+	\label{tab:data1}
+	\begin{tabular}{| c | c | c | с |} \hline
+	угол $\alpha, ^\circ$ & фотоЭДС,В & угол $\alpha, ^\circ$ & фотоЭДС,В   \\ \hline
+	180 &  0,0381 & 80	 & 0,0007  	\\ \hline
+	170 &  0,0379 & 70	 & 0,003  	\\ \hline
+	160 &  0,0355 & 60	 & 0,0083  	\\ \hline
+	150 &  0,0315 & 50	 & 0,0148   \\ \hline   
+	140 &  0,0225 & 40	 & 0,0211   \\ \hline
+	130 &  0,0179 & 30	 & 0,0272   \\ \hline
+	120 &  0,0115 & 20	 & 0,0326   \\ \hline
+	110 &  0,0054 & 10	 & 0,0361   \\ \hline
+	100 &  0,0004 & 0	 & 0,0376   \\ \hline
+	90	 &  0      &     &          \\
+	\hline
+	\end{tabular}
+\end{table}	
+Максимальное значение фотоЭДС -- $0,0381$В
+График зависимости  представлен на рисунке \ref{im:graph1}. График построен и аппроксимирован в программе Origin. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width = \linewidth]{graph1.png}
+	\caption{График зависимости }	
+	\label{im:graph1}	
+\end{figure}
+
+Результаты измерений представлены в таблице \ref{tab:data2}. 
+\begin{table}[h]
+	\caption{Результаты измерений }
+	\centering
+	\label{tab:data2}
+	\begin{tabular}{| c | c | c | c | c | c |} \hline
+кол-во витков & сила тока & магнитная индукция & длина катушки &\multirow{2}{*}{$\alpha = N/L$} & \multirow{2}{*}{$\Delta\alpha$} \\ \cline{1-4}
+N& I, А; $\Delta I = 0{,}1$А & B, мТ;  $\Delta B = 0{,}1$мТ	& L, м; $\Delta L = 0{,}001$м & & \\ \hline
+\multirow{9}{*}{30} &20 & 1,9 &	0,4	 & 75	&  0,18 \\  \cline{2-6}
+&20 & 2	 &  0,36 &	83,3  & 0,2                 \\  \cline{2-6}
+&20 & 2,2 &	0,32 &	93,8  & 0,3                 \\  \cline{2-6}
+&20 & 2,6 &	0,28 &	107,1 &	0,4                 \\  \cline{2-6}
+&20 & 3,2 &	0,24 &	125	  & 0,5                 \\  \cline{2-6}
+&20 & 3,7 &	0,2	 &	150	  & 0,8                 \\  \cline{2-6}
+&20 & 4,5 &	0,16 &	187,5 &	1,2                 \\  \cline{2-6}
+&20 & 5,5 &	0,12 &	250	  & 2                   \\  \cline{2-6}
+&20 & 6,7 &	0,08 &	375	  & 5                   \\
+		\hline
+	\end{tabular}
+\end{table}	
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width = \linewidth]{graph2.png}
+	\caption{График зависимости}	
+	\label{im:graph2}	
+\end{figure}
+
+
+\section{Вывод}
+
+
+\end{document}
